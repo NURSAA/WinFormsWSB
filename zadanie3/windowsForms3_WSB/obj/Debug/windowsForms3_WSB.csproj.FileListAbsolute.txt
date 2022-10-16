@@ -1,0 +1,11 @@
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\bin\Debug\windowsForms3_WSB.exe.config
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\bin\Debug\windowsForms3_WSB.exe
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\bin\Debug\windowsForms3_WSB.pdb
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.csproj.AssemblyReference.cache
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.csproj.SuggestedBindingRedirects.cache
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.Form1.resources
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.Properties.Resources.resources
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.csproj.GenerateResource.cache
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.csproj.CoreCompileInputs.cache
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.exe
+C:\Users\nursa\source\repos\windowsForms3_WSB\windowsForms3_WSB\obj\Debug\windowsForms3_WSB.pdb
