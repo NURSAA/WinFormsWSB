@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsWSB_4
 {
@@ -48,7 +50,7 @@ namespace WindowsFormsWSB_4
             ListViewItem item = entriesListView.Items[itemIndex];
             ToDoEntry entry = entries[itemIndex];
             item.SubItems[0].Text = entry.Title;
-            item.SubItems[1].Text = entry.Due.ToString(); 
+            item.SubItems[1].Text = entry.Due.ToString();
         }
 
         private void entriesSource_ListChanged(object sender, ListChangedEventArgs e)
@@ -89,6 +91,74 @@ namespace WindowsFormsWSB_4
             {
                 int entryIndex = entriesListView.SelectedIndices[0];
                 entriesSource.Position = entryIndex;
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = saveFileDialog1.FileName;
+                saveToFile(fileName, entries);
+                MessageBox.Show("List saved to file Sucessfully");
+
+            }
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            BindingList<ToDoEntry> list = new BindingList<ToDoEntry>();
+            entriesListView.Items.Clear();
+
+            try
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    StreamReader streamReader = new StreamReader(openFileDialog1.FileName);
+
+                    string row;
+                    while ((row = streamReader.ReadLine()) != null)
+                    {
+                        if (row.Count() > 4)
+                        {
+                            var tasks = row.Split(';');
+
+                            ToDoEntry entry = new ToDoEntry
+                            {
+                                Title = tasks[0],
+                                Description = tasks[1],
+                                Due = Convert.ToDateTime(tasks[2])
+                            };
+
+                            //add new items to listView
+                            string[] Listrow = { entry.Title, entry.Due.ToString(), entry.Description };
+                            ListViewItem item = new ListViewItem(Listrow);
+                            entriesListView.Items.Add(item);
+                            
+                            list.Add(entry);
+                        }
+                    }
+                }
+
+                entries = list;
+                entriesSource.DataSource = list;
+
+                MessageBox.Show("List Loaded Sucessfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void saveToFile(string fileName, BindingList<ToDoEntry> rows)
+        {
+            using (StreamWriter sw = new StreamWriter(fileName))
+            {
+                foreach (var row in rows)
+                {
+                    sw.WriteLine($"{row.Title};{row.Description};{row.Due}\n");
+                }
             }
         }
     }

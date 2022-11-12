@@ -33,6 +33,8 @@
             this.entriesListView = new System.Windows.Forms.ListView();
             this.titleColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dueDateColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.dtpDueDate = new System.Windows.Forms.DateTimePicker();
@@ -41,6 +43,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.entriesSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -62,6 +66,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnLoad);
+            this.splitContainer1.Panel2.Controls.Add(this.btnSave);
             this.splitContainer1.Panel2.Controls.Add(this.btnDelete);
             this.splitContainer1.Panel2.Controls.Add(this.btnNew);
             this.splitContainer1.Panel2.Controls.Add(this.dtpDueDate);
@@ -98,6 +104,26 @@
             // 
             this.dueDateColumn.Text = "Due Day";
             this.dueDateColumn.Width = 90;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(102, 268);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(101, 23);
+            this.btnLoad.TabIndex = 9;
+            this.btnLoad.Text = "Wczytaj Liste";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(21, 268);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Zapisz";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -179,6 +205,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Title";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.DefaultExt = "txt";
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Dokumenty tekstowe (*.txt) | *.txt|Pliki ini (*.ini) | *.ini|Wszystkie pliki (*.*" +
+    ") | *.*";
+            this.openFileDialog1.InitialDirectory = ".";
+            this.openFileDialog1.Title = "Load ToDo File";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "txt";
+            this.saveFileDialog1.Filter = "Dokumenty tekstowe (*.txt) | *.txt|Pliki ini (*.ini) | *.ini|Wszystkie pliki (*.*" +
+    ") | *.*";
+            this.saveFileDialog1.InitialDirectory = ".";
+            this.saveFileDialog1.Title = "Save ToDo File";
+            // 
             // entriesSource
             // 
             this.entriesSource.DataSource = typeof(WindowsFormsWSB_4.ToDoEntry);
@@ -217,6 +260,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
