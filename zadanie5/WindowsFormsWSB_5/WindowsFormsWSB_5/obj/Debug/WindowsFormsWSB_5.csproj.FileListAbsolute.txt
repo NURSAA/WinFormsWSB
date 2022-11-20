@@ -1,0 +1,13 @@
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\bin\Debug\company.mdf
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\bin\Debug\company_log.ldf
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\bin\Debug\WindowsFormsWSB_5.exe.config
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\bin\Debug\WindowsFormsWSB_5.exe
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\bin\Debug\WindowsFormsWSB_5.pdb
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.csproj.AssemblyReference.cache
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.csproj.SuggestedBindingRedirects.cache
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.Properties.Resources.resources
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.csproj.GenerateResource.cache
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.csproj.CoreCompileInputs.cache
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.exe
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.pdb
+C:\Users\nursa\source\repos\WinForms\zadanie5\WindowsFormsWSB_5\WindowsFormsWSB_5\obj\Debug\WindowsFormsWSB_5.Form1.resources
